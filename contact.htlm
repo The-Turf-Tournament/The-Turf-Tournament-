@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact - The Turf Tournament</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0c0c0c;
+      color: #fff;
+    }
+    .navbar {
+      background-color: #111;
+      padding: 1rem 0;
+    }
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      color: #fff;
+      font-size: 1.5rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+    .nav-links li a {
+      color: #ddd;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+    .nav-links li a:hover {
+      color: #f0a500;
+    }
+    .contact-section {
+      max-width: 800px;
+      margin: 3rem auto;
+      padding: 2rem;
+      background-color: #1a1a1a;
+      border-radius: 12px;
+    }
+    .contact-section h2 {
+      color: #f0a500;
+      text-align: center;
+    }
+    .contact-section p {
+      margin: 1rem 0;
+      font-size: 1.1rem;
+    }
+  </style>
+</head>
+<body>
+  <!-- NAVBAR START -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">The Turf Tournament</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="results.html">Results</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+  <!-- NAVBAR END -->
+
+  <!-- CONTACT SECTION -->
+  <section class="contact-section">
+    <h2>Contact Us</h2>
+    <p><strong>Organizer:</strong> Zaib</p>
+    <p><strong>Phone:</strong> 63988 76943</p>
+    <p><strong>Email:</strong> <a href="mailto:zaib60236@gmail.com" style="color: #f0a500;">zaib60236@gmail.com</a></p>
+    <p><strong>Location:</strong> St. Jhones College Ground, Agra</p>
+    <p><strong>Instagram:</strong> <a href="https://instagram.com/the_turf_tournament" target="_blank" style="color: #f0a500;">@the_turf_tournament</a></p>
+  </section>
+</body>
+</html>
