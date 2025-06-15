@@ -1,39 +1,143 @@
 /* Reset default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
-{ margin: 0; padding: 0; box-sizing: border-box; }
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  color: #333;
+  line-height: 1.6;
+}
 
+/* HEADER */
+header {
+  background: #111;
+  color: #fff;
+  padding: 12px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
-body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; line-height: 1.6; background-color: #f8f9fa; color: #333; }
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #fff;
+}
 
-header { background: #111; color: #fff; padding: 10px 20px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; }
+.logo img {
+  height: 40px;
+  width: auto;
+}
 
-.logo { display: flex; align-items: center; gap: 10px; font-size: 1.5rem; font-weight: bold; color: #fff; }
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
 
-.logo img { height: 40px; width: auto; }
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+}
 
-nav ul { list-style: none; display: flex; gap: 20px; }
+nav a:hover {
+  color: #00e0ff;
+}
 
-nav a { color: #fff; text-decoration: none; font-weight: 600; }
+/* HERO SECTION */
+.hero {
+  width: 100%;
+  max-width: 100%;
+  overflow: hidden;
+  margin-top: 1rem;
+  text-align: center;
+}
 
-nav a:hover { color: #00e0ff; }
+.hero img {
+  width: 100%;
+  max-height: 350px;
+  object-fit: cover;
+  border-radius: 10px;
+}
 
-.hero { text-align: center; padding: 40px 20px; background-color: #222; color: white; }
+/* HOME SECTION */
+.home {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+  text-align: center;
+}
 
-.hero img { max-width: 100%; height: auto; border-radius: 10px; }
+.home h1 {
+  font-size: 2.2rem;
+  margin-bottom: 1rem;
+}
 
-main.home { max-width: 800px; margin: 2rem auto; padding: 0 1rem; text-align: center; }
+.home p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+}
 
-main.home img { margin-top: 1rem; max-width: 300px; width: 100%; height: auto; display: block; margin-left: auto; margin-right: auto; border: 1px solid #ccc; padding: 8px; background: white; border-radius: 8px; }
+/* QR SECTION */
+.home img {
+  margin-top: 1rem;
+  width: 220px;
+  height: auto;
+  border: 1px solid #ccc;
+  padding: 8px;
+  background: white;
+  border-radius: 8px;
+}
 
-.register-button { display: inline-block; padding: 14px 28px; background: linear-gradient(135deg, #f0a500, #ff7300); color: white; font-size: 1.1rem; font-weight: bold; border: none; border-radius: 50px; cursor: pointer; text-transform: uppercase; letter-spacing: 1px; box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); transition: all 0.3s ease; margin-top: 20px; }
+/* BUTTON */
+.register-button {
+  display: inline-block;
+  padding: 14px 28px;
+  background: linear-gradient(135deg, #f0a500, #ff7300);
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-top: 1.5rem;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
 
-.register-button:hover { transform: scale(1.05); background: linear-gradient(135deg, #ff7300, #f0a500); box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3); }
+.register-button:hover {
+  transform: scale(1.05);
+  background: linear-gradient(135deg, #ff7300, #f0a500);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
 
-footer { background-color: #111; color: #ccc; padding: 2rem 1rem; text-align: center; font-size: 0.95rem; margin-top: 4rem; }
+/* FOOTER */
+footer {
+  background-color: #111;
+  color: #ccc;
+  padding: 2rem 1rem;
+  text-align: center;
+  font-size: 0.95rem;
+  margin-top: 4rem;
+}
 
-footer a { color: #ccc; text-decoration: none; margin: 0 0.5rem; }
+footer a {
+  color: #ccc;
+  text-decoration: none;
+}
 
-footer a:hover { color: #fff; }
-
-footer h3 { color: #f0a500; margin-bottom: 0.5rem; }
-
+footer a:hover {
+  color: #00e0ff;
+}
