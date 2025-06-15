@@ -1,32 +1,90 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Turf Tournament</title>
-  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0c0c0c;
+      color: #fff;
+    }
+    .navbar {
+      background-color: #111;
+      padding: 1rem 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .logo {
+      color: #fff;
+      font-size: 1.5rem;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 1.5rem;
+    }
+    .nav-links li a {
+      color: #ddd;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: color 0.3s;
+    }
+    .nav-links li a:hover {
+      color: #f0a500;
+    }
+    .hero {
+      text-align: center;
+      padding: 3rem 1rem;
+      background-color: #1a1a1a;
+    }
+    .hero h1 {
+      font-size: 2.5rem;
+      color: #f0a500;
+    }
+    .hero p {
+      color: #ccc;
+      margin-bottom: 2rem;
+    }
+    .hero-image {
+      width: 90%;
+      max-width: 900px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    }
+  </style>
 </head>
 <body>
-  <header>
-    <div class="logo">
-      <img src="assets/logo.png" alt="Turf Tournament Logo" />
-    </div>
-    <nav>
-      <ul>
+  <!-- NAVBAR START -->
+  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">The Turf Tournament</a>
+      <ul class="nav-links">
         <li><a href="index.html">Home</a></li>
-        <li><a href="tournaments.html">Tournaments</a></li>
-        <li><a href="register.html">Register</a></li>
         <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="results.html">Results</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
-    </nav>
-  </header>
-
-  <section class="hero">
-    <img src="assets/banner.jpg" alt="Tournament Banner" />
+    </div>
+  </nav>
+  <!-- NAVBAR END -->  <!-- HERO SECTION START -->  <header class="hero">
     <h1>Welcome to The Turf Tournament</h1>
-    <p>Showcasing the best local cricket & football talents.</p>
-    <a href="register.html" class="btn">Register Now</a>
-  </section>
+    <p>Where passion meets the pitch – Football and Cricket Tournaments</p>
+    <img src="assets/hero.jpg" alt="Hero Image" class="hero-image">
+  </header>
+  <!-- HERO SECTION END -->
 </body>
 </html>
