@@ -31,7 +31,17 @@ nav a:hover { color: #00e0ff; }
 
 .home p { font-size: 1.1rem; margin: 0.5rem 0; }
 
-.qr-section img { width: 220px; height: auto; margin-top: 1rem; border: 1px solid #ccc; padding: 8px; background: white; border-radius: 8px; }
+.qr-section {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.qr-section img {
+  max-width: 300px;
+  border-radius: 10px;
+  display: block;
+  margin: 1rem auto;
+}
 
 footer { background-color: #111; color: #ccc; padding: 2rem 1rem; text-align: center; font-size: 0.95rem; margin-top: 4rem; }
 
