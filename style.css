@@ -43,6 +43,19 @@ nav a:hover {
 }
 
 .hero {
+  width: 100%;
+  max-height: 400px; /* Adjust this value as needed */
+  overflow: hidden;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+.hero {
   text-align: center;
   padding: 40px 20px;
   background: url('assets/banner.jpg') no-repeat center center/cover;
