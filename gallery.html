@@ -1,108 +1,130 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Gallery | The Turf Tournament</title>
+  <title>Gallery – The Turf Tournament</title>
   <style>
     body {
-      font-family: 'Segoe UI', sans-serif;
       margin: 0;
-      background: #ffffff;
-      color: #333;
-    }
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0c0c0c;
+      color: #fff;
+    }.navbar {
+  background-color: #111;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
 
-    header {
-      text-align: center;
-      padding: 1.5rem;
-      background: #222;
-    }
+.nav-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
-    header img {
-      height: 60px;
-    }
+.logo {
+  color: #fff;
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-weight: bold;
+}
 
-    header h1 {
-      color: white;
-      margin-top: 0.5rem;
-    }
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
 
-    .gallery-section {
-      padding: 2rem;
-      text-align: center;
-    }
+.nav-links li a {
+  color: #ddd;
+  text-decoration: none;
+  font-size: 1rem;
+  transition: color 0.3s;
+}
 
-    .gallery-section h2 {
-      font-size: 2rem;
-      margin-bottom: 1.5rem;
-      color: #111;
-    }
+.nav-links li a:hover {
+  color: #f0a500;
+}
 
-    .gallery-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.2rem;
-      padding: 0 1rem;
-    }
+header {
+  text-align: center;
+  padding: 2rem;
+}
 
-    .gallery-grid img {
-      width: 100%;
-      height: auto;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
-    }
+.gallery-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 1rem;
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
 
-    .gallery-grid img:hover {
-      transform: scale(1.05);
-    }
+.gallery-section img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
 
-    footer {
-      background: #222;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-      margin-top: 2rem;
-    }
+.gallery-section img:hover {
+  transform: scale(1.05);
+}
+
+footer {
+  text-align: center;
+  padding: 2rem;
+  background-color: #111;
+  color: #ccc;
+}
+
   </style>
 </head>
-<body>
-
-  <header>
-    <img src="assets/logo.jpg" alt="The Turf Tournament Logo" />
-    <h1>The Turf Tournament Gallery</h1>
-  </header>
-
-  <section class="gallery-section">
-    <h2>📸 Tournament Moments</h2>
-    <div class="gallery-grid">
-      <img src="assets/gallery1.jpg" alt="Gallery Image 1" />
-      <img src="assets/gallery2.jpg" alt="Gallery Image 2" />
-      <img src="assets/gallery3.jpg" alt="Gallery Image 3" />
-      <img src="assets/gallery4.jpg" alt="Gallery Image 4" />
-      <img src="assets/gallery5.jpg" alt="Gallery Image 5" />
-      <img src="assets/gallery6.jpg" alt="Gallery Image 6" />
-      <img src="assets/gallery7.jpg" alt="Gallery Image 7" />
-      <img src="assets/gallery8.jpg" alt="Gallery Image 8" />
-      <img src="assets/gallery9.jpg" alt="Gallery Image 9" />
-      <img src="assets/gallery10.jpg" alt="Gallery Image 10" />
-      <img src="assets/gallery11.jpg" alt="Gallery Image 11" />
-      <img src="assets/gallery12.jpg" alt="Gallery Image 12" />
-      <img src="assets/gallery13.jpg" alt="Gallery Image 13" />
-      <img src="assets/gallery14.jpg" alt="Gallery Image 14" />
-      <img src="assets/gallery15.jpg" alt="Gallery Image 15" />
-      <img src="assets/gallery16.jpg" alt="Gallery Image 16" />
-      <img src="assets/gallery17.jpg" alt="Gallery Image 17" />
-      <img src="assets/gallery18.jpg" alt="Gallery Image 18" />
-      <img src="assets/gallery19.jpg" alt="Gallery Image 19" />
-      <img src="assets/gallery20.jpg" alt="Gallery Image 20" />
-      <img src="assets/gallery21.jpg" alt="Gallery Image 21" />
+<body>  <!-- NAVBAR START -->  <nav class="navbar">
+    <div class="nav-container">
+      <a href="index.html" class="logo">The Turf Tournament</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="register.html">Register</a></li>
+        <li><a href="results.html">Results</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </div>
-  </section>
-
-  <footer>
-    © 2025 The Turf Tournament. All rights reserved.
+  </nav>
+  <!-- NAVBAR END -->  <header>
+    <h1>Gallery</h1>
+    <p>Moments from our past tournaments</p>
+  </header>  <section class="gallery-section">
+    <img src="assets/gallery1.jpg" alt="Tournament Image 1">
+    <img src="assets/gallery2.jpg" alt="Tournament Image 2">
+    <img src="assets/gallery3.jpg" alt="Tournament Image 3">
+    <img src="assets/gallery4.jpg" alt="Tournament Image 4">
+    <img src="assets/gallery5.jpg" alt="Tournament Image 5">
+    <img src="assets/gallery6.jpg" alt="Tournament Image 6">
+    <img src="assets/gallery7.jpg" alt="Tournament Image 7">
+    <img src="assets/gallery8.jpg" alt="Tournament Image 8">
+    <img src="assets/gallery9.jpg" alt="Tournament Image 9">
+    <img src="assets/gallery10.jpg" alt="Tournament Image 10">
+    <img src="assets/gallery11.jpg" alt="Tournament Image 11">
+    <img src="assets/gallery12.jpg" alt="Tournament Image 12">
+    <img src="assets/gallery13.jpg" alt="Tournament Image 13">
+    <img src="assets/gallery14.jpg" alt="Tournament Image 14">
+    <img src="assets/gallery15.jpg" alt="Tournament Image 15">
+    <img src="assets/gallery16.jpg" alt="Tournament Image 16">
+    <img src="assets/gallery17.jpg" alt="Tournament Image 17">
+    <img src="assets/gallery18.jpg" alt="Tournament Image 18">
+    <img src="assets/gallery19.jpg" alt="Tournament Image 19">
+    <img src="assets/gallery20.jpg" alt="Tournament Image 20">
+    <img src="assets/gallery21.jpg" alt="Tournament Image 21">
+  </section>  <footer>
+    <p>&copy; 2025 The Turf Tournament. All rights reserved.</p>
   </footer>
-
 </body>
 </html>
