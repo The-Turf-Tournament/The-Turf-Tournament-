@@ -6,18 +6,64 @@
   <title>Register - The Turf Tournament</title>
   <link rel="stylesheet" href="style.css" />
   <style>
-    iframe {
-      width: 100%;
-      height: 800px;
-      border: none;
-      margin-top: 2rem;
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem 2rem;
+      background-color: #111;
+      color: white;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo img {
+      width: 40px;
+      height: 40px;
+      object-fit: cover;
+      border-radius: 50%;
+    }
+
+    .logo span {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #f0a500;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    nav a:hover, nav a.active {
+      color: #f0a500;
+    }
+
     .register-section {
       max-width: 960px;
       margin: 2rem auto;
       padding: 0 1rem;
       text-align: center;
     }
+
     .qr-section img {
       width: 220px;
       height: auto;
@@ -26,25 +72,62 @@
       padding: 8px;
       background: white;
     }
+
+    .register-button {
+      display: inline-block;
+      margin-top: 2rem;
+      padding: 0.75rem 1.5rem;
+      font-size: 1rem;
+      background: linear-gradient(135deg, #f0a500, #ffcc00);
+      color: #111;
+      border: none;
+      border-radius: 30px;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .register-button:hover {
+      background: linear-gradient(135deg, #ffcc00, #f0a500);
+    }
+
+    footer {
+      background-color: #111;
+      color: #ccc;
+      padding: 2rem 1rem;
+      text-align: center;
+      font-size: 0.95rem;
+      margin-top: 4rem;
+    }
+
+    footer a {
+      color: #ccc;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #f0a500;
+    }
   </style>
 </head>
 <body>
+  <!-- HEADER -->
   <header>
-  <div class="logo">
-  <img src="assets/logo.jpg" alt="Logo" />
-  <span>The Turf Tournament</span>
-  </div>
-  <nav>
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="register.html">Register</a></li>
-      <li><a href="results.html">Results</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
+    <div class="logo">
+      <img src="assets/logo.jpg" alt="Logo" />
+      <span>The Turf Tournament</span>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="register.html" class="active">Register</a></li>
+        <li><a href="results.html">Results</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
+  <!-- MAIN SECTION -->
   <main class="register-section">
     <h1>Register for the Tournament</h1>
     <p>Please fill out the form below to register your team for the upcoming tournament.</p>
@@ -54,24 +137,25 @@
       <img src="assets/registration_qr.jpg" alt="UPI QR Code for Registration">
       <p>UPI ID: <strong>zaib60236@okicici</strong></p>
     </div>
+
     <a href="https://forms.gle/m45ZfDXyfZVNHvxv9" target="_blank" class="register-button">Register Now</a>
   </main>
 
-  <footer style="background-color: #111; color: #ccc; padding: 2rem 1rem; text-align: center; font-size: 0.95rem; margin-top: 4rem;">
+  <!-- FOOTER -->
+  <footer>
     <div style="max-width: 1200px; margin: auto;">
       <h3 style="color: #f0a500; margin-bottom: 0.5rem;">The Turf Tournament</h3>
       <p>📍 Agra, Uttar Pradesh</p>
-      <p>📞 <a href="tel:6398876943" style="color: #ccc; text-decoration: none;">63988 76943</a> |
-         📧 <a href="mailto:zaib60236@gmail.com" style="color: #ccc; text-decoration: none;">zaib60236@gmail.com</a></p>
+      <p>📞 <a href="tel:6398876943">63988 76943</a> | 📧 <a href="mailto:zaib60236@gmail.com">zaib60236@gmail.com</a></p>
       <div style="margin: 1rem 0;">
-        <a href="index.html" style="margin: 0 0.5rem; color: #ccc; text-decoration: none;">Home</a> |
-        <a href="gallery.html" style="margin: 0 0.5rem; color: #ccc; text-decoration: none;">Gallery</a> |
-        <a href="register.html" style="margin: 0 0.5rem; color: #ccc; text-decoration: none;">Register</a> |
-        <a href="results.html" style="margin: 0 0.5rem; color: #ccc; text-decoration: none;">Results</a> |
-        <a href="contact.html" style="margin: 0 0.5rem; color: #ccc; text-decoration: none;">Contact</a>
+        <a href="index.html">Home</a> |
+        <a href="gallery.html">Gallery</a> |
+        <a href="register.html">Register</a> |
+        <a href="results.html">Results</a> |
+        <a href="contact.html">Contact</a>
       </div>
       <div style="margin-top: 1rem;">
-        <a href="https://instagram.com/the_turf_tournament" target="_blank" style="color: #f0a500; text-decoration: none;">📸 Follow us on Instagram</a>
+        <a href="https://instagram.com/the_turf_tournament" target="_blank">📸 Follow us on Instagram</a>
       </div>
       <p style="margin-top: 1.5rem;">&copy; 2025 The Turf Tournament. All rights reserved.</p>
     </div>
