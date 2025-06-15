@@ -1,10 +1,31 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Contact - The Turf Tournament</title>
+  <title>Register - The Turf Tournament</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    iframe {
+      width: 100%;
+      height: 800px;
+      border: none;
+      margin-top: 2rem;
+    }
+    .register-section {
+      max-width: 960px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+      text-align: center;
+    }
+    .qr-section img {
+      width: 220px;
+      height: auto;
+      margin-top: 1rem;
+      border: 1px solid #ccc;
+      padding: 8px;
+      background: white;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -12,33 +33,23 @@
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="register.html">Register</a></li>
+        <li><a href="register.html" class="active">Register</a></li>
         <li><a href="results.html">Results</a></li>
         <li><a href="gallery.html">Gallery</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
-  </header>
+  </header>  <main class="register-section">
+    <h1>Register for the Tournament</h1>
+    <p>Please fill out the form below to register your team for the upcoming tournament.</p><div class="qr-section">
+  <h3>Pay Entry Fee via QR Code</h3>
+  <img src="assets/qr.jpg" alt="UPI QR Code for Registration">
+  <p>UPI ID: <strong>zaib60236@okicici</strong></p>
+</div>
 
-  <main class="contact">
-    <h1>Contact Us</h1>
-    <p>If you have any questions or would like to get in touch about our tournaments, please contact us below:</p>
+<iframe src="https://forms.gle/QPhL9hXyL2fdMh2N7" allowfullscreen></iframe>
 
-    <div class="contact-info">
-      <p><strong>Organizer:</strong> Zaib</p>
-      <p><strong>Email:</strong> <a href="mailto:zaib60236@gmail.com">zaib60236@gmail.com</a></p>
-      <p><strong>Phone:</strong> <a href="tel:+916398876943">63988 76943</a></p>
-      <p><strong>Instagram:</strong> <a href="https://instagram.com/the_turf_tournament" target="_blank">@the_turf_tournament</a></p>
-    </div>
-
-    <div class="qr-section">
-      <h3>Register Now via QR</h3>
-      <img src="assets/qr.jpg" alt="QR Code for Registration" class="qr-image" />
-    </div>
-  </main>
-
-  <!-- FOOTER START -->
-  <footer style="background-color: #111; color: #ccc; padding: 2rem 1rem; text-align: center; font-size: 0.95rem; margin-top: 4rem;">
+  </main>  <!-- FOOTER START -->  <footer style="background-color: #111; color: #ccc; padding: 2rem 1rem; text-align: center; font-size: 0.95rem; margin-top: 4rem;">
     <div style="max-width: 1200px; margin: auto;">
       <h3 style="color: #f0a500; margin-bottom: 0.5rem;">The Turf Tournament</h3>
       <p>📍 Agra, Uttar Pradesh</p>
